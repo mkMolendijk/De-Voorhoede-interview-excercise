@@ -1,6 +1,6 @@
 # interview-excercise
 
-> Voorhoede interview excercise web app
+> De Voorhoede interview excercise web app, built with Vue.JS
 
 ## Build Setup
 
