@@ -11,7 +11,7 @@
 
     <div class="container is-fluid content blog-posts">
       <transition name="slide-fade">
-        <router-view></router-view>
+          <router-view></router-view>
       </transition>
     </div>
 
@@ -44,6 +44,9 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+  }
+
+  .container {
     min-height: 100vh
   }
 
@@ -64,11 +67,14 @@
   .slide-fade-enter-active {
     transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
   }
+
   .slide-fade-leave-active {
     transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
   }
+
   .slide-fade-enter, .slide-fade-leave-to
-    /* .slide-fade-leave-active below version 2.1.8 */ {
+    /* .slide-fade-leave-active below version 2.1.8 */
+  {
     transform: translateX(10px);
     opacity: 0;
   }

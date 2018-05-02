@@ -18,5 +18,12 @@ export default new Router({
       name: 'BlogPost',
       component: BlogPost
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ x: 0, y: 0 })
+      }, 800)
+    })
+  }
 })
